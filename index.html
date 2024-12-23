@@ -5,38 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>تعليم اللغة الفرنسية للأطفال</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <img src="logo.webp" alt="شعار الموقع" class="logo">
-        <h1>مرحبًا بكم في موقع تعليم اللغة الفرنسية للأطفال</h1>
+        <div class="container">
+            <img src="logo.webp" alt="شعار الموقع" class="logo">
+            <h1>تعليم اللغة الفرنسية للأطفال</h1>
+            <p>تعلم اللغة الفرنسية بطريقة مرحة وسهلة</p>
+        </div>
     </header>
 
+    <nav>
+        <ul class="menu">
+            <li><a href="#about">عن الموقع</a></li>
+            <li><a href="#content">المحتوى</a></li>
+            <li><a href="#videos">فيديوهات</a></li>
+            <li><a href="#contact">تواصل معنا</a></li>
+        </ul>
+    </nav>
+
     <main>
-        <section class="intro">
-            <h2>مغامرة ممتعة لتعلم الفرنسية</h2>
-            <p>تعلم المفردات الفرنسية من خلال الصور، الأغاني، والفيديوهات التعليمية الممتعة!</p>
+        <section id="about" class="about">
+            <h2>عن الموقع</h2>
+            <p>هذا الموقع مصمم خصيصًا لتعليم الأطفال مفردات اللغة الفرنسية من خلال الصور، الأغاني، والفيديوهات التعليمية الممتعة!</p>
         </section>
 
-        <section class="content">
-            <div class="card">
-                <img src="colors.webp" alt="تعلم الألوان">
-                <h3>تعلم الألوان</h3>
-                <p>اكتشف أسماء الألوان بالفرنسية مع نطق سهل وممتع.</p>
-            </div>
-            <div class="card">
-                <img src="numbers.webp" alt="تعلم الأرقام">
-                <h3>تعلم الأرقام</h3>
-                <p>تعلم العد من 1 إلى 10 مع أنشطة مرحة.</p>
-            </div>
-            <div class="card">
-                <img src="animals.webp" alt="تعلم الحيوانات">
-                <h3>تعلم أسماء الحيوانات</h3>
-                <p>تعرف على الحيوانات وأسمائها بالفرنسية من خلال الأغاني.</p>
+        <section id="content" class="content">
+            <h2>محتوياتنا</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="colors.webp" alt="تعلم الألوان">
+                    <h3>الألوان</h3>
+                    <p>تعلم أسماء الألوان باللغة الفرنسية بطريقة ممتعة.</p>
+                </div>
+                <div class="card">
+                    <img src="numbers.webp" alt="تعلم الأرقام">
+                    <h3>الأرقام</h3>
+                    <p>اكتشف طريقة العد من 1 إلى 10 بالفرنسية.</p>
+                </div>
+                <div class="card">
+                    <img src="animals.webp" alt="تعلم أسماء الحيوانات">
+                    <h3>الحيوانات</h3>
+                    <p>تعرف على أسماء الحيوانات وأصواتها باللغة الفرنسية.</p>
+                </div>
             </div>
         </section>
 
-        <section class="videos">
+        <section id="videos" class="videos">
             <h2>فيديوهات تعليمية</h2>
             <video controls>
                 <source src="video.mp4" type="video/mp4">
@@ -46,7 +62,7 @@
     </main>
 
     <footer>
-        <p>© 2024 - جميع الحقوق محفوظة لموقع تعليم الفرنسية للأطفال</p>
+        <p>© 2024 - جميع الحقوق محفوظة</p>
     </footer>
 </body>
 </html>

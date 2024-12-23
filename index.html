@@ -1,68 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تعليم اللغة الفرنسية للأطفال</title>
+    <meta name="description" content="تعليم اللغة الفرنسية للأطفال باستخدام الصور والفيديوهات التفاعلية">
+    <title>تعليم الفرنسية للأطفال</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
         <div class="container">
-            <img src="logo.webp" alt="شعار الموقع" class="logo">
-            <h1>تعليم اللغة الفرنسية للأطفال</h1>
-            <p>تعلم اللغة الفرنسية بطريقة مرحة وسهلة</p>
+            <a class="navbar-brand" href="#"><img src="logo.webp" alt="شعار الموقع" class="logo"> تعليم الفرنسية للأطفال</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">عن الموقع</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#content">المحتوى</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#videos">فيديوهات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">تواصل معنا</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero text-center text-white">
+        <div class="container">
+            <h1>مرحبًا بكم في عالم اللغة الفرنسية</h1>
+            <p class="lead">اكتشف متعة التعلم من خلال الصور، الأغاني، والفيديوهات التفاعلية</p>
+            <a href="#content" class="btn btn-primary btn-lg">ابدأ الآن</a>
         </div>
     </header>
 
-    <nav>
-        <ul class="menu">
-            <li><a href="#about">عن الموقع</a></li>
-            <li><a href="#content">المحتوى</a></li>
-            <li><a href="#videos">فيديوهات</a></li>
-            <li><a href="#contact">تواصل معنا</a></li>
-        </ul>
-    </nav>
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-4">عن الموقع</h2>
+            <p>هذا الموقع مخصص لتعليم الأطفال اللغة الفرنسية بطريقة مبتكرة وسهلة من خلال أدوات تعليمية ممتعة تشمل الصور، الفيديوهات، والألعاب التفاعلية.</p>
+        </div>
+    </section>
 
-    <main>
-        <section id="about" class="about">
-            <h2>عن الموقع</h2>
-            <p>هذا الموقع مصمم خصيصًا لتعليم الأطفال مفردات اللغة الفرنسية من خلال الصور، الأغاني، والفيديوهات التعليمية الممتعة!</p>
-        </section>
-
-        <section id="content" class="content">
-            <h2>محتوياتنا</h2>
-            <div class="cards">
-                <div class="card">
-                    <img src="colors.webp" alt="تعلم الألوان">
-                    <h3>الألوان</h3>
-                    <p>تعلم أسماء الألوان باللغة الفرنسية بطريقة ممتعة.</p>
+    <!-- Content Section -->
+    <section id="content" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">المحتوى التعليمي</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="colors.webp" class="card-img-top" alt="تعلم الألوان">
+                        <div class="card-body">
+                            <h5 class="card-title">تعلم الألوان</h5>
+                            <p class="card-text">استكشف أسماء الألوان باللغة الفرنسية بطريقة مرحة.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="card">
-                    <img src="numbers.webp" alt="تعلم الأرقام">
-                    <h3>الأرقام</h3>
-                    <p>اكتشف طريقة العد من 1 إلى 10 بالفرنسية.</p>
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="numbers.webp" class="card-img-top" alt="تعلم الأرقام">
+                        <div class="card-body">
+                            <h5 class="card-title">تعلم الأرقام</h5>
+                            <p class="card-text">تعلم العد من 1 إلى 10 باللغة الفرنسية.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="card">
-                    <img src="animals.webp" alt="تعلم أسماء الحيوانات">
-                    <h3>الحيوانات</h3>
-                    <p>تعرف على أسماء الحيوانات وأصواتها باللغة الفرنسية.</p>
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="animals.webp" class="card-img-top" alt="تعلم أسماء الحيوانات">
+                        <div class="card-body">
+                            <h5 class="card-title">أسماء الحيوانات</h5>
+                            <p class="card-text">تعرف على الحيوانات وأسمائها بالفرنسية من خلال صور وأصوات.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="videos" class="videos">
-            <h2>فيديوهات تعليمية</h2>
-            <video controls>
+    <!-- Videos Section -->
+    <section id="videos" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-4">فيديوهات تعليمية</h2>
+            <video controls class="w-75 shadow-sm">
                 <source src="video.mp4" type="video/mp4">
                 متصفحك لا يدعم تشغيل الفيديو.
             </video>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <footer>
-        <p>© 2024 - جميع الحقوق محفوظة</p>
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white text-center">
+        <p>© 2024 - جميع الحقوق محفوظة - تعليم الفرنسية للأطفال</p>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

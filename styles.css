@@ -1,153 +1,32 @@
-/* إعدادات الخطوط والألوان */
 body {
     font-family: 'Cairo', sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
     line-height: 1.6;
-    background-color: #f9f9f9;
 }
 
-/* تصميم الهيدر */
-header {
-    background-color: #ffcccb;
-    color: #333;
-    text-align: center;
-    padding: 50px 20px;
+.logo {
+    width: 50px;
+    margin-right: 10px;
 }
 
-header .logo {
-    width: 100px;
-    margin-bottom: 20px;
-}
-
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-header p {
-    font-size: 1.2rem;
-    margin: 0;
-}
-
-/* القائمة الرئيسية */
-nav {
-    background-color: #333;
-    padding: 10px 0;
-}
-
-nav .menu {
+.hero {
+    background: url('hero-bg.webp') no-repeat center center/cover;
+    height: 60vh;
     display: flex;
+    align-items: center;
     justify-content: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    text-align: center;
 }
 
-nav .menu li {
-    margin: 0 15px;
-}
-
-nav .menu a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.1rem;
+.hero h1 {
+    font-size: 3rem;
     font-weight: bold;
 }
 
-nav .menu a:hover {
-    text-decoration: underline;
+.hero .btn {
+    margin-top: 20px;
 }
 
-/* القسم التعريفي */
-.about {
-    padding: 40px 20px;
-    text-align: center;
-    background-color: #fefbd8;
-}
-
-.about h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.about p {
-    font-size: 1rem;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-/* قسم المحتويات */
-.content {
-    padding: 40px 20px;
-    background-color: #fff;
-}
-
-.content h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 30px;
-}
-
-.cards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    width: 300px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    text-align: center;
-    padding: 20px;
-}
-
-.card img {
-    width: 100%;
+.card-img-top {
     height: 200px;
     object-fit: cover;
-    border-radius: 10px;
-}
-
-.card h3 {
-    margin: 15px 0 10px;
-    font-size: 1.5rem;
-}
-
-.card p {
-    font-size: 1rem;
-    color: #666;
-}
-
-/* قسم الفيديو */
-.videos {
-    padding: 40px 20px;
-    text-align: center;
-    background-color: #fefbd8;
-}
-
-.videos h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.videos video {
-    width: 80%;
-    max-width: 600px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-}
-
-/* الفوتر */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
 }

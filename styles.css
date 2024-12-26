@@ -1,27 +1,19 @@
 /* إعدادات عامة */
 body {
-    margin: 0;
     font-family: 'Tajawal', sans-serif;
-    line-height: 1.6;
-    background-color: #fdfdfd;
+    margin: 0;
+    background-color: #f4f4f9;
     color: #333;
+    text-align: center;
 }
 
-h1, h2, h3 {
+h1, h2 {
+    margin: 0 0 10px;
     color: #2c3e50;
-    margin-bottom: 15px;
 }
 
 p {
     color: #555;
-    margin-bottom: 20px;
-    font-size: 1.1rem;
-    line-height: 1.8;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
 }
 
 /* شريط التنقل */
@@ -79,13 +71,16 @@ a {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    background: url('hero-background.webp') no-repeat center center/cover;
-    color: #fff;
+    background-color: #81c784;
     padding: 120px 20px;
     position: relative;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    overflow: hidden;
 }
-
+/* المحتوى داخل الهيرو */
+.hero-content {
+    z-index: 2;
+}
 .hero h1 {
     font-size: 2.5rem;
 }
@@ -95,7 +90,7 @@ a {
 }
 
 .hero .btn {
-    background: #81c784;
+    background: #4caf50;
     color: #fff;
     padding: 12px 25px;
     border-radius: 25px;
@@ -108,7 +103,20 @@ a {
     background: #66bb6a;
     transform: scale(1.1);
 }
-
+/* إضافة الخلفية المتحركة */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('background-image-1.webp');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    animation: background-animation 10s infinite;
+}
 /* الأقسام */
 .section {
     padding: 60px 20px;
@@ -176,17 +184,24 @@ footer p {
     margin: 0;
 }
 
+
+/* تحريك الخلفية */
+@keyframes background-animation {
+    0% {
+        background-image: url('background-image-1.webp');
+    }
+    33% {
+        background-image: url('background-image-2.webp');
+    }
+    66% {
+        background-image: url('background-image-3.webp');
+    }
+    100% {
+        background-image: url('background-image-1.webp');
+    }
+}
 /* التصميم الاستجابي */
 @media (max-width: 768px) {
-    .cards {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card {
-        width: 90%;
-    }
-
     .navbar ul {
         flex-direction: column;
         gap: 10px;

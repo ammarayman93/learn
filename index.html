@@ -7,66 +7,75 @@
     <title>تعليم الفرنسية للأطفال</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="logo.webp" alt="شعار الموقع" class="logo">
+            <span class="site-title">تعليم الفرنسية للأطفال</span>
+        </div>
+        <ul>
+            <li><a href="#about">عن الموقع</a></li>
+            <li><a href="#content">المحتوى التعليمي</a></li>
+            <li><a href="#videos">الفيديوهات</a></li>
+        </ul>
+    </nav>
+
     <!-- Header Section -->
     <header class="hero">
-        <div class="container">
-            <img src="logo.webp" alt="شعار الموقع" class="logo">
-            <h1>مرحبًا بكم في عالم الفرنسية</h1>
-            <p>تعلم اللغة الفرنسية بسهولة ومتعة من خلال الصور والفيديوهات التفاعلية</p>
-            <a href="#content" class="btn">ابدأ الآن</a>
-        </div>
+        <h1>مرحبًا بكم في عالم الفرنسية</h1>
+        <p>تعلم اللغة الفرنسية بسهولة ومتعة من خلال الصور والفيديوهات التفاعلية</p>
+        <a href="#content" class="btn">ابدأ الآن</a>
     </header>
 
     <!-- About Section -->
     <section id="about" class="section about">
-        <div class="container">
-            <h2>عن الموقع</h2>
-            <p>تم تصميم هذا الموقع خصيصًا للأطفال لتعلم اللغة الفرنسية من خلال أنشطة مرحة تشمل الصور والفيديوهات التفاعلية التي تجعل التعليم ممتعًا وسهلًا.</p>
-        </div>
+        <h2>عن الموقع</h2>
+        <p>تم تصميم هذا الموقع خصيصًا للأطفال لتعلم اللغة الفرنسية من خلال أنشطة مرحة تشمل الصور والفيديوهات التفاعلية التي تجعل التعليم ممتعًا وسهلًا.</p>
     </section>
 
     <!-- Content Section -->
     <section id="content" class="section content">
-        <div class="container">
-            <h2>المحتوى التعليمي</h2>
-            <div class="cards">
-                <div class="card">
-                    <img src="colors.webp" alt="الألوان">
-                    <h3>تعلم الألوان</h3>
-                    <p>استمتع بمعرفة أسماء الألوان بالفرنسية.</p>
-                </div>
-                <div class="card">
-                    <img src="numbers.webp" alt="الأرقام">
-                    <h3>تعلم الأرقام</h3>
-                    <p>تعرف على الأرقام بالفرنسية بطريقة ممتعة.</p>
-                </div>
-                <div class="card">
-                    <img src="animals.webp" alt="الحيوانات">
-                    <h3>أسماء الحيوانات</h3>
-                    <p>تعرف على أسماء الحيوانات وصوتها باللغة الفرنسية.</p>
-                </div>
+        <h2>المحتوى التعليمي</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="colors.webp" alt="الألوان">
+                <h3>تعلم الألوان</h3>
+                <p>استمتع بمعرفة أسماء الألوان بالفرنسية.</p>
+            </div>
+            <div class="card">
+                <img src="numbers.webp" alt="الأرقام">
+                <h3>تعلم الأرقام</h3>
+                <p>تعرف على الأرقام بالفرنسية بطريقة ممتعة.</p>
+            </div>
+            <div class="card">
+                <img src="animals.webp" alt="الحيوانات">
+                <h3>أسماء الحيوانات</h3>
+                <p>تعرف على أسماء الحيوانات وصوتها باللغة الفرنسية.</p>
             </div>
         </div>
     </section>
 
     <!-- Videos Section -->
     <section id="videos" class="section videos">
-        <div class="container">
-            <h2>فيديوهات تعليمية</h2>
-            <video controls class="video">
-                <source src="video.mp4" type="video/mp4">
-                متصفحك لا يدعم تشغيل الفيديو.
-            </video>
-        </div>
+        <h2>فيديوهات تعليمية</h2>
+        <video controls class="video">
+            <source src="video.mp4" type="video/mp4">
+            متصفحك لا يدعم تشغيل الفيديو.
+        </video>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>© 2024 جميع الحقوق محفوظة - تعليم الفرنسية للأطفال</p>
-        </div>
+        <p>© 2024 جميع الحقوق محفوظة - تعليم الفرنسية للأطفال</p>
     </footer>
+
+    <!-- Scroll Animation Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

@@ -80,6 +80,7 @@ p {
 /* المحتوى داخل الهيرو */
 .hero-content {
     z-index: 2;
+    padding: 20px;
 }
 .hero h1 {
     font-size: 2.5rem;
